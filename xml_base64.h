@@ -313,21 +313,21 @@ namespace xml_base64 {
 		return doc.SaveFile(xmlPath);
 	}
 
-	template <typename T> int deserialize_xml_base64(T& object, const char * labelName, const char* xmlPath) {
+	template <typename T> int deserialize_xml_base64(T& object, const char * label_name, const char* file_path) {
 		XMLDocument doc;
-		if (doc.LoadFile(xmlPath) != 0) {
-			cout << "ERROR: Failed to load file " << xmlPath << endl;
+		if (doc.LoadFile(file_path) != 0) {
+			cout << "ERROR: Failed to load file " << file_path << endl;
 			return 0;
 		}
 
 		XMLElement* root = doc.RootElement();
-		XMLElement* node = root->FirstChildElement(labelName);
+		XMLElement* node = root->FirstChildElement(label_name);
 		if (node != NULL) {
 			xml_base64::deserialize_process(object, false, node);
 			return 1;
 		}
 		else {
-			cout << "ERROR: The file '" << xmlPath << "' do not have element named '" << labelName << "'." << endl;
+			cout << "ERROR: The file '" << file_path << "' do not have element named '" << label_name << "'." << endl;
 			return 0;
 		}
 	}
