@@ -4,7 +4,7 @@ This is a simple C++ serialization and deserialization library, which support bi
 
 At the present, the library can serialize and deserialize the following types: arithmetic (see [std::is_arithmetic](https://en.cppreference.com/w/cpp/types/is_arithmetic)), C++ string type (`std::string`), STL containers (`std::pair`, `std::vector`, `std::list`, `std::set`, and `std::map`), smart pointer (`std::shared_ptr` and `std::unique_ptr`) and user-defined types (`struct` and `class`).
 
-Besides, the XML and base64 coded XML serialization and deserialization uses the tinyxml2 library.
+Besides, the implementation of XML and base64 coded XML serialization and deserialization uses the [tinyxml2](https://github.com/leethomason/tinyxml2) library.
 
 Please note that this library is only available for C++17 or higher version. Moreover, since it has only been tested with MSVC2019 compiler, it is possible that this library does not work well with other compiler.
 
