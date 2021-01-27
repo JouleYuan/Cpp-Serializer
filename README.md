@@ -55,4 +55,4 @@ public:
 
 ## About
 
-This library is developed by Yuan Haoran and Wang Chenlu. If you have any new idea about this library, you can create a new issue or  your pull request any time.
+This library is developed by Yuan Haoran and Wang Chenlu. If you have any new idea about this library, you can create a new issue or  your pull request at any time.
