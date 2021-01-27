@@ -6,7 +6,7 @@ At the present, the library can serialize and deserialize the following types: a
 
 Besides, the implementation of XML and base64 coded XML serialization and deserialization uses the [tinyxml2](https://github.com/leethomason/tinyxml2) library.
 
-Please note that this library is only available for C++17 or higher version. Moreover, since it has only been tested with MSVC2019 compiler, it is possible that this library does not work well with other compiler.
+Please note that this library is only available for C++17 or higher version. Moreover, since it has only been tested with MSVC compiler, it is possible that this library does not work well with other compiler.
 
 ## Quick Start
 
