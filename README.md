@@ -46,10 +46,10 @@ If you want to serialize user-defined types, including `struct` and `class`, add
 class UserDefinedType {
 public:
     int idx;
-	string name;
-	vector<double> data;
+    string name;
+    vector<double> data;
 
-	ENABLE_SER(idx, name, data);
+    ENABLE_SER(idx, name, data);
 };
 ```
 
