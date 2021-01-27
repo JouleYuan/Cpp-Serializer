@@ -40,7 +40,7 @@ xml_base64::serialize_xml_base64(list0, "std_list", "list_base64.xml");
 xml_base64::deserialize_xml_base64(list3, "std_list", "list_base64.xml");
 ```
 
-If you want to serialize user-defined types, including `struct` and `class`, add a claim `ENABLE_SER(__VA_ARGS__)` in the specification.
+If you want to serialize user-defined types, including `struct` and `class`, add a claim `ENABLE_SER(__VA_ARGS__)` in the definition.
 
 ```c++
 class UserDefinedType {
